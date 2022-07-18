@@ -29,7 +29,7 @@ impl Originator {
 }
 
 pub struct Memento {
-    pub state: String,
+    state: String,
 }
 
 pub struct Caretaker {
@@ -47,7 +47,7 @@ impl Caretaker {
 
     pub fn undo(&mut self) -> Result<Memento, &'static str> {
         match self.mementos.pop() {
-            Some(state) => Ok(state),
+            Some(memento) => Ok(memento),
             None => Err("nothing is saved"),
         }
     }
