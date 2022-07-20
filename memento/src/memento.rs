@@ -4,7 +4,7 @@ pub struct Originator {
 
 impl Originator {
     pub fn new() -> Self {
-        Originator {
+        Self {
             state: String::new(),
         }
     }

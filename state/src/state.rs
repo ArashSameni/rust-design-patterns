@@ -4,7 +4,7 @@ pub struct Context {
 
 impl Context {
     pub fn new() -> Self {
-        Context {
+        Self {
             state: Box::new(StateA {}),
         }
     }

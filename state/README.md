@@ -11,7 +11,7 @@ The State pattern is commonly used to convert massive if-else statements into ob
 
 ## Applicability
 
-Use the state pattern when
+Use the State pattern when
 
 * An object's behavior depends on its state, and it must change its behavior depending on that state
 * When you have a lot of duplicate code across similar states and transitions of a condition-based state machine
